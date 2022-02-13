@@ -1,16 +1,19 @@
-# This is a sample Python script.
+a = [1, 2, 3, 4, 4]
+b = [2, 4]
 
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
+def array_diff(a, b):
+    #your code here
+    z = 0
+    c = a
+    print(c)
+    for x in c:
+        print(x)
+        for y in b:
+            print('--' + str(y))
+            if x == y:
+                del a[z]
+                print(a)
+        z = z + 1
+    return(a)
 
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+print(array_diff(a, b))
