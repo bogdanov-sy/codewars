@@ -7,7 +7,7 @@ def alphabet_position(text):
         print(i)
         if i.upper() in ABC:
             print(i.upper())
-            index = ABC.index(i.upper())
+            index = ABC.index(i.upper()) + 1
             print(index)
             code += ' ' + str(index)
     #code_str = ''.join(code)

@@ -6,7 +6,7 @@ a = [1, 2, 3, 4, 4]
 b = [2, 4]
 l = [0, 0, 'b', 3.5]
 
-text = 'Lorem Ipsum 6'
+text = "The sunset sets at twelve o' clock."
 
 print(ad(a, b))
 print(fl(l))
