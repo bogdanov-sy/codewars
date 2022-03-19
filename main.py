@@ -7,7 +7,7 @@ a = [1, 2, 3, 4, 4]
 b = [2, 4]
 l = [0, 0, 'b', 3.5]
 
-dc_test = 'Indivisibilities77'
+dc_test = 'abcdeaB'
 
 text = "The sunset sets at twelve o' clock."
 

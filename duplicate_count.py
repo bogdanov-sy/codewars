@@ -2,20 +2,16 @@ def duplicate_count(text):
     # Your code goes here
 
     count = 0
-    len_text = len(str(text))
-    print(len_text)
-    list_text = list(text)
+    text_lower = text.lower()
+    print(text_lower)
+    list_text = list(text_lower)
+    set_text = set(list_text)
+    print(set_text)
     print(list_text)
-    for i in range(1, len_text):
-        b = list_text.pop()
-        print(list_text)
-        print(b)
-        count += list_text.count(b)
-        print(count)
-        #for x in list_text:
-        #    print(x)
-        #    if x == b:
-        #        count += 1
+    for i in set_text:
+        list_text_count = list_text.count(i)
+        if list_text_count > 1:
+            count += 1
+            print(count)
     print(count)
     return (count)
-
